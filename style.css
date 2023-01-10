@@ -1,0 +1,109 @@
+body{
+  background: black;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .game { 
+    width: 946px;
+    height: 495px;
+    background:linear-gradient(rgb(7, 171, 247),rgb(109, 200, 225),white,white);
+    border: 2px solid #000;
+    margin: 100px auto;
+  }
+  .counter{
+    color: red;
+    width: 50px;
+    height: 30px;
+    border: 1px solid black;
+    background: transparent;
+    margin-left: 893px;
+  }
+  #dino {
+    width: 75px;
+    height: 80px;
+    background: url("https://i.gifer.com/origin/b8/b8affb5bab498cef6f4b645aa98ff062_w200.gif") no-repeat center center/cover;
+    position: relative;
+    top: 150px;
+    z-index: 99;
+  }
+  
+  #cactus {
+    width: 30px;
+    height: 85px;
+    position: relative;
+    top: 90px;
+    left: 780px;
+    background: url("https://pngimg.com/uploads/cactus/cactus_PNG23622.png")
+      no-repeat center center/cover;
+    background-size: 30px 40px;
+    animation: cactus 1s infinite linear;
+    
+  }
+  #sun{
+    width: 60px;
+    height: 75px;
+    position: relative;
+    top: 10px;
+    left: 600px;
+    background: url("https://www.icegif.com/wp-content/uploads/2022/08/icegif-843.gif")
+      no-repeat center center/cover;
+    background-size: 100% 80px;
+    animation: cactus 15s infinite linear;
+  }
+  #cloud1{
+    width: 60px;
+    height: 75px;
+    position: relative;
+    top: 20px;
+    left: 580px;
+    background: url("https://pngimg.com/uploads/cloud/cloud_PNG6.png")
+      no-repeat center center/cover;
+    background-size: 100% 80px;
+    animation: cactus 4s infinite linear;
+  }
+  #cloud2{
+    width: 60px;
+    height: 75px;
+    position: relative;
+    top: 10px;
+    left: 580px;
+    background: url("https://www.pngkey.com/png/full/1-14969_clouds-realistic-cloud-clouds-png.png")
+      no-repeat center center/cover;
+    background-size: 100% 80px;
+    animation: cactus 5s infinite linear;
+  }
+  
+  .jump {
+    animation: jump 0.5s linear;
+  }
+  
+  @keyframes jump {
+    0% {
+      top: 150px;
+    }
+    30% {
+      top: 115px;
+    }
+    50% {
+      top: 70px;
+    }
+    80% {
+      top: 115px;
+    }
+    100% {
+      top: 150px;
+    }
+  }
+  
+  @keyframes cactus {
+    0% {
+      left: 900px;
+    }
+    100% {
+      left: -10px;
+    }
+  }
